@@ -14,4 +14,4 @@
 <%= @address.phone_number %>
 <hr>
 <%= link_to 'Edit', edit_address_path(@address) %>
-<%= link_to 'Delete', 
+<%= link_to "Delete this post", address_path(@address), method: :delete %>

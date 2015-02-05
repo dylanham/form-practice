@@ -1,5 +1,7 @@
 <% @addresses.each do |address| %>
-<%= link_to address.name, address_path(address) %>
+<%= link_to 'View Address', address_path(address) %>
+<br>
+<%= address.name %>
 <br>
 <%= address.address_line_one %>
 <br>
