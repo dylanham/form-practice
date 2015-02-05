@@ -1,0 +1,18 @@
+<% @addresses.each do |address| %>
+<%= link_to address.name, address_path(address) %>
+<br>
+<%= address.address_line_one %>
+<br>
+<%= address.address_line_two %>
+<br>
+<%= address.city %>
+<br>
+<%= address.state %>
+<br>
+<%= address.zipcode %>
+<br>
+<%= address.phone_number %>
+<hr>
+<%end%>
+
+<%= link_to 'Add a new address',new_address_path %>
